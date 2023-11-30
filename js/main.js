@@ -38,12 +38,38 @@ function pauseMusic() {
     music.pause();
 }
 
-function updateBar(){
-    let bar = document.querySelector('progress');
-    bar.style.width = (Math.floor((music.currentTime / music.duration) * 200) / 2) + '%';
+function updateBar() {
+    let range = document.querySelector('input[type="range"]');
     let theCurrentTime = document.querySelector('.start');
+    
+    let percentage = (music.currentTime / music.duration) * 100;
+
+    range.value = percentage;
     theCurrentTime.textContent = secondsToMinutes(Math.floor(music.currentTime));
 }
+
+function clickBar() {
+    let range = document.querySelector('input[type="range"]');
+    let music = document.querySelector('audio');
+
+    range.addEventListener('input', function() {
+        // Obtém a porcentagem do controle deslizante
+        let percentage = range.value;
+
+        // Calcula o novo tempo da música com base na porcentagem
+        let newTime = (percentage / 100) * music.duration;
+
+        // Define o tempo da música
+        music.currentTime = newTime;
+
+        // Atualiza a barra de progresso
+        updateBar();
+    });
+}
+
+clickBar();
+
+
 
 function secondsToMinutes(seconds){
     let fieldMinutes = Math.floor(seconds / 60);
