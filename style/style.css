@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hind', sans-serif;
+}
+
+header, main, footer{
+    margin: 1rem;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-image: url(../img/hitesh-dewasi-AJ-YiPjnFiw-unsplash.jpg);
+    background-size: cover;
+}
+.box-main{
+    border: 2px groove #0d0c0c;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 40px rgba(0, 0, 0, 0.795);
+    width: 400px;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/* Clock */
+.clock{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    margin: 1rem 0;
+    width: 300px;
+}
+#date, #time{
+    position: relative;
+}
+#date, #time{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+
+/* main-container */
+.main-container{
+ display: flex;
+ flex-direction:column;
+ align-items: center;
+ 
+}
+
+#image-music{
+    width: 300px;
+    height: 300px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0.5rem 0;
+    text-align: justify;
+}
+
+h2, i{
+    box-shadow: black 0px 0px 50px 0px;
+    text-shadow: 0px 5px 5px black;
+}
+/* Barra e controle de tempo */
+.duration{
+    width: 300px;
+    margin: 0.5rem 0.5rem;
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+    border: solid 2px rgb(61, 54, 54);
+    justify-content: flex-start;
+}
+
+progress{
+    width: 0%;
+    background-color: #333;
+    height: 7px;
+    /* z-index: -1; */
+}
+
+.point{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: -5px;
+}
+
+/* Time control */
+.time-control{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* controles de players*/
+button{
+    border-radius: 25%;
+}
+
+.btn-next img,  .btn-previous img{
+    height: 50px;
+}
+
+footer{
+    width: 350px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Music</title>
+    <link rel="shortcut icon" href="favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-main">
+            <header>
+                <div class="clock">
+                    <p id="date"></p>
+                    <p id="time"></p>
+                </div>
+            </header>
+            <main>
+                <div class="main-container">
+                    <img id="image-music" src="./img/michael-maasen-bu-6kNWQj6U-unsplash.jpg"
+                        alt="imagem do gênero musical">
+
+                    <div class="description">
+                        <h2>Nome da música</h2>
+                        <i>Nome do artista</i>
+                    </div>
+
+                    <div class="duration">
+                        <div class="barra barra-carregada">
+                            <progress class="progre" value="0" max="1"></progress>
+                            <!-- <input type="range" value="0" max="1"> -->
+                            <div class="point"></div>
+                        </div>
+                        <div class="time-control">
+                            <p class="start">0:00</p>
+                            <p class="end">0:00</p>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <button class="btn-previous"><img src="./icons/icons8-início-64.png" alt="previous"></button>
+                        <button class="btn-play"><img src="./icons/icons8-reproduzir-64.png" alt="play"></button>
+                        <button class="btn-pause"><img src="./icons/icons8-pausa-quadrada-64.png" alt="pause"></button>
+                        <button class="btn-next"><img src="./icons/icons8-fim-64.png" alt=""></button>
+                    </div>
+
+                    <audio src=""></audio>
+                </div>
+            </main>
+            <footer>
+                <h6>Projeto criado por <a href="https://kevinmarlei.github.io/criandoPortfolio/" target="_blank"
+                        style="color: white;">Kevin Marlei</a> com intuito de estudo e portfólio.</h6>
+            </footer>
+        </div>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/musicObject.js"></script>
+    <script src="./js/clock.js"></script>
+</body>
+
+</html>
