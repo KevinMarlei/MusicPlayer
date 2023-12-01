@@ -139,12 +139,12 @@ h2, i{
     align-items: end;
     justify-content: end;
     width: 100%;
-    translate: 0 -535%;
+    translate: -2% -535%;
     
 }
 
 .volume-controls > img{
-    margin: -0.3rem 0.1rem ;
+    margin: -0.3rem 0rem ;
 }
 /* Time control */
 .time-control{
