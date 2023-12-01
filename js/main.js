@@ -13,6 +13,13 @@ document.querySelector('.btn-play').addEventListener('click', playMusic);
 document.querySelector('.btn-pause').addEventListener('click', pauseMusic);
 volumeControl.addEventListener('input', controlVolume);
 
+volumeControl.addEventListener('wheel', function(event){
+    event.preventDefault();
+    volumeControl.value = parseInt(volumeControl.value) + (event.deltaY > 0 ? -1 : 1);
+    volumeControl.value = Math.max(0, Math.min(100, volumeControl.value));
+    controlVolume();
+});
+
 document.querySelector('.btn-next').addEventListener('click', ()=>{
     indexMusic++;
     if(indexMusic >= objectMusic.length){
