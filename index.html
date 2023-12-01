@@ -27,7 +27,13 @@
                         <h2>Nome da música</h2>
                         <i>Nome do artista</i>
                     </div>
-                    <input class="volume" type="range" min="0" max="100" step="1" value="50">
+                    <div class="volume-controls">
+                        <img class="high-volume" style="display: none;" src="./icons/icons8-volume-alto-64.svg" alt="high-volume">
+                        <img class="medium-volume" src="./icons/icons8-volume-médio-64_1.svg" alt="medium-volume">
+                        <img class="low-volume" style="display: none;" src="./icons/icons8-volume-baixo-64.svg" alt="low-volume">
+                        <img class="zero-volume" style="display: none;" src="./icons/icons8-volume-zero-64_1.svg" alt="zero-volume">
+                        <input class="volume" type="range" min="0" max="100" step="1" value="50">
+                    </div>
                     <div class="duration">
                         <div class="barra barra-carregada">
                             <input class="progre" type="range" min="0" max="100" value="0">

@@ -13,9 +13,7 @@ body{
 header, main{
     margin: 1rem;
 }
-footer{
-    margin-bottom: 1.5rem;
-}
+
 .container{
     height: 100vh;
     display: grid;
@@ -42,7 +40,7 @@ footer{
     display: flex;
     justify-content: center;
     font-weight: 600;
-    margin: 1rem 0;
+    margin: 1.5rem 0 0 0;
     width: 300px;
 }
 #date, #time{
@@ -120,8 +118,6 @@ h2, i{
 
 .volume{
     transform: rotate(270deg);
-    translate: 240% -60%;
-    /* margin-left: 110%; */
     width: 70px;
     appearance: none;
     outline: none;
@@ -139,6 +135,18 @@ h2, i{
     box-shadow: -410px 0 0 400px rgba(255, 255, 255, 0.836);
     cursor: pointer;
 }
+.volume-controls{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    margin-left: 100px;
+    margin-bottom: 5px;
+}
+
+.high-volume, .medium-volume, .low-volume, .zero-volume{
+    translate: -115% -145%;
+}
 /* Time control */
 .time-control{
     width: 300px;
@@ -148,6 +156,7 @@ h2, i{
 }
 
 /* controles de players*/
+
 button{
     border-radius: 25%;
 }
@@ -158,4 +167,5 @@ button{
 
 footer{
     width: 350px;
+    padding-bottom: 2.5rem;
 }

@@ -100,7 +100,39 @@ function renderMusic(index){
 }
 
 function controlVolume(){
+    const highVolumeIcon = document.querySelector('.high-volume');
+    const mediumVolumeIcon = document.querySelector('.medium-volume');
+    const lowVolumeIcon = document.querySelector('.low-volume');
+    const zeroVolumeIcon = document.querySelector('.zero-volume');
    music.volume = volumeControl.value / 100;
+//high volume
+   if(music.volume > 0.75){
+    highVolumeIcon.style.display = 'block';
+    mediumVolumeIcon.style.display = 'none';
+    lowVolumeIcon.style.display = 'none';
+    zeroVolumeIcon.style.display = 'none';
+   }
+   //medium volume
+   if(music.volume >= 0.5 && music.volume < 0.75 || music.volume <= 0.5 && music.volume >= 0.25){
+    highVolumeIcon.style.display = 'none';
+    mediumVolumeIcon.style.display = 'block';
+    lowVolumeIcon.style.display = 'none';
+    zeroVolumeIcon.style.display = 'none';
+   }
+   //low volume
+   if(music.volume < 0.25){
+    highVolumeIcon.style.display = 'none';
+    mediumVolumeIcon.style.display = 'none';
+    lowVolumeIcon.style.display = 'block';
+    zeroVolumeIcon.style.display = 'none';
+   }
+   //zero volume
+   if(music.volume == 0){
+    highVolumeIcon.style.display = 'none';
+    mediumVolumeIcon.style.display = 'none';
+    lowVolumeIcon.style.display = 'none';
+    zeroVolumeIcon.style.display = 'block';
+   }
 }
 // função para tocar a próxima música quando a atual chegar ao fim.
 function playNext(){
