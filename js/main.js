@@ -5,11 +5,13 @@ let musicDuration = document.querySelector('.end');
 let image = document.querySelector('img');
 let musicName = document.querySelector('.description h2');
 let artistName = document.querySelector('.description i');
+let volumeControl = document.querySelector('.volume');
 
 renderMusic(indexMusic);
 //eventos
 document.querySelector('.btn-play').addEventListener('click', playMusic);
 document.querySelector('.btn-pause').addEventListener('click', pauseMusic);
+volumeControl.addEventListener('input', controlVolume);
 
 document.querySelector('.btn-next').addEventListener('click', ()=>{
     indexMusic++;
@@ -39,7 +41,7 @@ function pauseMusic() {
 }
 
 function updateBar() {
-    let range = document.querySelector('input[type="range"]');
+    let range = document.querySelector('.progre[type="range"]');
     let theCurrentTime = document.querySelector('.start');
     
     let percentage = (music.currentTime / music.duration) * 100;
@@ -49,7 +51,7 @@ function updateBar() {
 }
 
 function clickBar() {
-    let range = document.querySelector('input[type="range"]');
+    let range = document.querySelector('.progre[type="range"]');
     let music = document.querySelector('audio');
 
     range.addEventListener('input', function() {
@@ -68,8 +70,6 @@ function clickBar() {
 }
 
 clickBar();
-
-
 
 function secondsToMinutes(seconds){
     let fieldMinutes = Math.floor(seconds / 60);
@@ -90,6 +90,10 @@ function renderMusic(index){
         musicDuration.textContent = secondsToMinutes(Math.floor(music.duration));
     });
     playMusic();
+}
+
+function controlVolume(){
+   music.volume = volumeControl.value / 100;
 }
 // função para tocar a próxima música quando a atual chegar ao fim.
 function playNext(){
