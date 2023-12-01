@@ -86,7 +86,7 @@ h2, i{
 .barra{
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 65%;
     height: 15px;
     border-radius: 20px;
     border: solid 2px rgb(61, 54, 54);
@@ -117,7 +117,6 @@ h2, i{
 
 
 .volume{
-    transform: rotate(270deg);
     width: 70px;
     appearance: none;
     outline: none;
@@ -137,19 +136,19 @@ h2, i{
 }
 .volume-controls{
     display: flex;
-    flex-direction: column;
     align-items: end;
+    justify-content: end;
     width: 100%;
-    margin-left: 100px;
-    margin-bottom: 5px;
+    translate: 0 -535%;
+    
 }
 
-.high-volume, .medium-volume, .low-volume, .zero-volume{
-    translate: -115% -145%;
+.volume-controls > img{
+    margin: -0.3rem 0.1rem ;
 }
 /* Time control */
 .time-control{
-    width: 300px;
+    width: 195px;
     display: flex;
     justify-content: space-between;
     margin: 0.5rem 0;
