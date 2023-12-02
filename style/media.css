@@ -1,0 +1,54 @@
+@media  screen and (max-height: 844px){
+    .box-main{
+        height: 650px;
+        width: 350px;
+    }
+    
+}
+@media screen and (max-device-height: 600px) and (max-device-width: 1024px){
+    .box-main{
+        height: 99%;
+        width: 35%;
+    }
+    #image-music{
+        height: 250px;
+    }
+}
+@media  screen and (max-device-height: 653px) and (max-device-width: 280px){
+    .box-main{
+        height: 99%;
+        width: 95%;
+    }
+    #image-music{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .description{
+       width: 250px;
+    }
+    .duration{
+        width: 250px;
+    }
+
+    .barra{
+        width: 150px;
+    } 
+    
+    footer{
+        width: 250px;
+    }
+}
+
+@media screen and (max-height: 658px){
+    .box-main{
+        height: 95%;
+    }
+    #image-music{
+        height: 150px;
+        width: 300px;
+    }
+}
+
+
+    

@@ -54,10 +54,25 @@ header, main{
 
 /* main-container */
 .main-container{
+    /* display: none; */
  display: flex;
  flex-direction:column;
  align-items: center;
  
+}
+#list-box{
+    display:flex;
+    flex-direction:column;
+    text-align: start;
+    height: 400px;
+    width: 300px;
+    overflow-y:auto;
+    list-style-type:decimal;
+    padding-left: 25px;
+}
+li{
+    color: rgb(243, 240, 240);
+    text-shadow: 0 0 0.2em black, 0 0 0.2em rgb(0, 0, 0);
 }
 
 #image-music{
