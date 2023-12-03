@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="favicon/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/media.css">
+    <link rel="stylesheet" href="./style/list.css">
 </head>
 
 <body>
@@ -20,32 +21,27 @@
                 </div>
             </header>
             <main>
-                <div id="list-box" style="display: none;">
-                    <ol>
-                        <li>Stay with Me</li>
+                <button id="btn-listMusic" style="display: block;">List music</button>
+                <button id="btn-closeMusic" style="display: none;">Close list</button>
+                <div id="gender-music" style="height: 2rem; display: none;">
+                    <button type="button">All music</button>
+                    <button type="button">Rock</button>
+                    <button type="button">J-pop</button>
+                    <button type="button">Sertanejo</button>
+                    <button type="button">Anime</button>
+                    <button type="button">Jazz</button>
+
+                
+                </div>
+                <div id="list-box"  style="display: none;">
+                    <ol class="chosen-list">
+                        <li><button>Stay With Me</button></li>
                         <li>Roundabout</li>
                         <li>Sorriso Resplandecente</li>
                         <li>Stay with Me</li>
                         <li>Roundabout</li>
                         <li>Sorriso Resplandecente</li>
                         <li>Stay with Me</li>
-                        <li>Roundabout</li>
-                        <li>Sorriso Resplandecente</li>
-                        <li>Stay with Me</li>
-                        <li>Roundabout</li>
-                        <li>Sorriso Resplandecente</li>
-                        <li>Stay with Me</li>
-                        <li>Roundabout</li>
-                        <li>Sorriso Resplandecente</li>
-                        <li>Stay with Me</li>
-                        <li>Roundabout</li>
-                        <li>Sorriso Resplandecente</li>
-                        <li>Stay with Me</li>
-                        <li>Roundabout</li>
-                        <li>Sorriso Resplandecente</li>
-                        <li>Stay with Me</li>
-                        <li>Roundabout</li>
-                        <li>Sorriso Resplandecente</li> <li>Stay with Me</li>
                         <li>Roundabout</li>
                         <li>Sorriso Resplandecente</li>
                         <li>Stay with Me</li>
@@ -59,7 +55,7 @@
                         <li>Sorriso Resplandecente</li>
                     </ol>
                 </div>
-                <div class="main-container">
+                <div class="main-container" style="display: block;">
                     <img id="image-music" src="./img/michael-maasen-bu-6kNWQj6U-unsplash.jpg"
                         alt="imagem do gênero musical">
 

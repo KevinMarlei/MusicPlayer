@@ -60,35 +60,6 @@ header, main{
  align-items: center;
  
 }
-#list-box{
-    display:flex;
-    flex-direction:column;
-    text-align: start;
-    height: 400px;
-    width: 300px;
-    overflow-y:auto;
-    list-style-type:decimal;
-    padding-left: 25px;
-}
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #887c7c5b;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #312c2c;
-  }
-  
-li{
-    color: rgb(243, 240, 240);
-    text-shadow: 0 0 0.2em black, 0 0 0.2em rgb(0, 0, 0);
-}
 
 #image-music{
     width: 300px;

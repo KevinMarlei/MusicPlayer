@@ -1,6 +1,6 @@
 const objectMusic = [
     {
-        gender:'j-op',
+        gender:'J-pop',
         title:'Stay With Me',
         artist:'Matsubara Miki',
         src:'music/Miki Matsubara - Stay With Me HD (Club Mix).mp3',
