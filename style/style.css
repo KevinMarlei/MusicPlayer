@@ -70,7 +70,7 @@ header, main{
     display: flex;
     flex-direction: column;
     width: 300px;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0.5rem;
     text-align: justify;
 }
 
@@ -140,7 +140,7 @@ h2, i{
     align-items: end;
     justify-content: end;
     width: 100%;
-    translate: -2% -535%;
+    translate: -2% -470%;
     
 }
 
