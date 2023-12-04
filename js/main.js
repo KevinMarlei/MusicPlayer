@@ -75,8 +75,8 @@ function clickBar() {
         updateBar();
     });
 }
-
 clickBar();
+
 
 function secondsToMinutes(seconds){
     let fieldMinutes = Math.floor(seconds / 60);
@@ -143,3 +143,4 @@ function playNext(){
     renderMusic(indexMusic);
 }
 
+/////////////////////////////////

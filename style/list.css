@@ -33,6 +33,10 @@
     list-style-type:decimal;
     padding-left: 25px;
 }
+
+.gender-option{
+  margin: 0 0 0 0.20rem;
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
