@@ -24,6 +24,8 @@ document.querySelector('.btn-next').addEventListener('click', () => {
     indexMusic++;
     if (indexMusic >= objectMusic.length) {
         indexMusic = 0;
+    }else if(indexMusic != objectMusic){
+        
     }
     renderMusic(indexMusic);
 });
@@ -89,13 +91,13 @@ function secondsToMinutes(seconds) {
 
 
 function renderMusic(index) {
-    music.setAttribute('src', objectMusic[index].src);
-    music.addEventListener('loadeddata', () => {
-        musicName.textContent = objectMusic[index].title;
-        artistName.textContent = objectMusic[index].artist;
-        image.src = objectMusic[index].img;
-        musicDuration.textContent = secondsToMinutes(Math.floor(music.duration));
-    });
+        music.setAttribute('src', objectMusic[index].src);
+        music.addEventListener('loadeddata', () => {
+            musicName.textContent = objectMusic[index].title;
+            artistName.textContent = objectMusic[index].artist;
+            image.src = objectMusic[index].img;
+            musicDuration.textContent = secondsToMinutes(Math.floor(music.duration));
+        });
     playMusic();
 }
 
@@ -148,49 +150,44 @@ function playNext() {
 //// declarações
 const btnListMusic = document.getElementById('btn-listMusic');
 const btnCloseMusic = document.getElementById('btn-closeMusic');
-const divGenderMusic = document.getElementById('gender-music');
-const btnGender = document.querySelector('.gender-option');
 const mainContainer = document.querySelector('.main-container');
 const divListBox = document.getElementById('list-box');
+const chosenList = document.querySelector('.chosen-list');
 /////Eventos
 //// Clique em list music para selecionar músicas
 btnListMusic.addEventListener('click', function () {
-    divGenderMusic.innerHTML = '';
     btnListMusic.style.display = 'none';
     btnCloseMusic.style.display = 'block'
     mainContainer.style.display = 'none';
-    divGenderMusic.style.display = 'block';
-    let btnAllMusics = document.createElement('button');
-    btnAllMusics.classList.add('gender-option');
-    btnAllMusics.textContent = 'All Musics';
-    divGenderMusic.appendChild(btnAllMusics);
-    listOfGenders();
+    divListBox.style.display = 'block';
+    chosenList.innerHTML = '';
+
+    //itera sobre o objeto criando um button pra cada title diferente que está no array
+    objectMusic.forEach(function (musics, index){
+        let btnMusics = document.createElement('button');
+        btnMusics.classList.add('music-button');
+        btnMusics.textContent = musics.title
+
+        //ao clicar em alguma música que estão como buttons, chama a renderMusic e passa a ela como parâmetro a posição da música selecionada que está contido no array original. Entretanto isso não faz com que o aplicativo dê sequência apartir da música selecionada quando ela acaba. O array volta para a posição da música anterior e prosegue apartir daí. Exemplo: Se o array estava na posição 1 e a música da posição 8 é selecionada, ao invés de continuar da música da posição 9 quando a da posição 8 finalizar o seu tempo, ele volta para a posição 0 e da sequência para a seguinte da posição 1.
+        btnMusics.addEventListener('click', function(){
+            renderMusic(index);
+            btnListMusic.style.display = 'block';
+            btnCloseMusic.style.display = 'none'
+            mainContainer.style.display = 'block';
+            divListBox.style.display = 'none';
+        });
+        //cria elemento LI e depois passa a variável que cria os button como filhos da li, e depois a variável chosenList que contem o elemento ol recebe como filho a variável que contém todos os li.
+        let elementLi = document.createElement('li');
+        elementLi.appendChild(btnMusics);
+        chosenList.appendChild(elementLi);
+    })
+   
 })
 ///Clique em close list para retornar ao normal
 btnCloseMusic.addEventListener('click', function () {
     btnCloseMusic.style.display = 'none';
     btnListMusic.style.display = 'block';
-    divGenderMusic.style.display = 'none';
     divListBox.style.display = 'none';
     mainContainer.style.display = 'block';
 })
 
-function listOfGenders(){
-
-    let uniqueGenders = [];
-    objectMusic.forEach(genders => {
-        if(genders.gender && !uniqueGenders.includes(genders.gender)){
-            uniqueGenders.push(genders.gender);
-        }
-    });
-    uniqueGenders.forEach(gender =>{
-            let btnOptionGender = document.createElement('button');
-            btnOptionGender.classList.add('gender-option');
-            btnOptionGender.textContent = gender;
-            divGenderMusic.appendChild(btnOptionGender)
-    })
-}
-
-function playdMusicsByGender(){
-
-}
