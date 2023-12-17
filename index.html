@@ -4,74 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player Music</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="favicon/favicon-16x16.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/media.css">
-    <link rel="stylesheet" href="./style/list.css">
+    <title>Player de Música</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="box-main">
-            <header>
-                <div class="clock">
-                    <p id="date"></p>
-                    <p id="time"></p>
-                </div>
-            </header>
+    <div id="centralizer">
+        <div id="container">
+            <div id="clock">
+                <header>
+                    <p id="date">15/10/2580</p>
+                    <p id="time">15:30</p>
+                </header>
+            </div>
             <main>
-                <button id="btn-listMusic" style="display: block;">List music</button>
-                <button id="btn-closeMusic" style="display: none;">Close list</button>
-                <div id="list-box"  style="display: none;">
-                    <ol class="chosen-list">
-                        <!-- <li><button>Stay With Me</button></li> -->
-                      
-                    </ol>
+                <div id="box-btn-list">
+                    <button class="btn-list-music">Musical Gender</button>
+                    <button class="btn-close-list">Close List</button>
                 </div>
-                <div class="main-container" style="display: block;">
-                    <img id="image-music" src="./img/michael-maasen-bu-6kNWQj6U-unsplash.jpg"
-                        alt="imagem do gênero musical">
-
-                    <div class="description">
-                        <h2>Nome da música</h2>
-                        <i>Nome do artista</i>
+                <div id="list-box">
+                    <div class="musical-gender">
+                        <div class="low-box-list">
+                            <button class="btn-gender">All Musics</button>
+                        </div>
                     </div>
-                  
-                    <div class="duration">
-                        <div class="barra barra-carregada">
-                            <input class="progre" type="range" min="0" max="100" value="0">
-                        </div>                       
-                        <div class="time-control">
+                </div>
+                <div id="box-image">
+                    <img class="image-music" src="/img/country&folk.jpg" alt="">
+                </div>
+                <div id="box-description">
+                    <h2 class="title">Nome da música</h2>
+                    <i class="artist-name">Nome do artista ou banda</i>
+                </div>
+                <div id="box-progress-volume">
+                    <div id="box-progress">
+                        <div class="box-input">
+                            <input class="progress-bar" type="range" min="0" max="100" value="0">
+                        </div>
+                        <div class="box-timer">
                             <p class="start">0:00</p>
                             <p class="end">0:00</p>
                         </div>
                     </div>
-                    <div class="volume-controls">
-                        <img class="high-volume" style="display: none;" src="./icons/icons8-volume-alto-64.svg" alt="high-volume">
-                        <img class="medium-volume" src="./icons/icons8-volume-médio-64_1.svg" alt="medium-volume">
-                        <img class="low-volume" style="display: none;" src="./icons/icons8-volume-baixo-64.svg" alt="low-volume">
-                        <img class="zero-volume" style="display: none;" src="./icons/icons8-volume-zero-64_1.svg" alt="zero-volume">
-                        <input class="volume" type="range" min="0" max="100" step="1" value="50">
+                    <div id="box-volume">
+                        <img class="high-volume generic-volume" src="./icons/icons8-volume-alto-64.svg" alt="" style="display: none;">
+                        <img class="medium-volume generic-volume" src="./icons/icons8-volume-médio-64_1.svg" alt="">
+                        <img class="low-volume generic-volume" src="./icons/icons8-volume-baixo-64.svg" alt="" style="display: none;">
+                        <img class="zero-volume generic-volume" src="./icons/icons8-volume-zero-64_1.svg" alt="" style="display: none;">
+                        <input class="volume" type="range" min="0" max="100" value="50">
                     </div>
-                    <div class="controls">
-                        <button class="btn-previous"><img src="./icons/icons8-início-64.png" alt="previous"></button>
-                        <button class="btn-play"><img src="./icons/icons8-reproduzir-64.png" alt="play"></button>
-                        <button class="btn-pause"><img src="./icons/icons8-pausa-quadrada-64.png" alt="pause"></button>
-                        <button class="btn-next"><img src="./icons/icons8-fim-64.png" alt=""></button>
-                    </div>
-
-                    <audio src=""></audio>
                 </div>
+                <div id="box-btn-controls">
+                    <button class="btn-previous"><img src="./icons/previous.png" alt=""></button>
+                    <button class="btn-play"><img src="./icons/play.png" alt=""></button>
+                    <button class="btn-pause"><img src="./icons/pause.png" alt=""></button>
+                    <button class="btn-next"><img src="./icons/next.png" alt=""></button>
+                </div>
+                <audio src=""></audio>
             </main>
             <footer>
-                <h6>Projeto criado por <a href="https://kevinmarlei.github.io/criandoPortfolio/" target="_blank"
-                        style="color: white;">Kevin Marlei</a> com intuito de estudo e portfólio.</h6>
+                <h6>Projeto criado por <a href="http://kevinmarlei.github.io/criandoPortfolio/" target="_blank" style="color: white;">Kevin
+                        Marlei</a> com intuito de estudo e portifólio</h6>
             </footer>
         </div>
     </div>
     <script src="./js/main.js" type="module"></script>
-    <script src="./js/musicObject.js"></script>
+    <script src="./js/objectMusic.js"></script>
     <script src="./js/clock.js"></script>
 </body>
 
