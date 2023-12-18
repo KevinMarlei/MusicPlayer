@@ -1,3 +1,6 @@
+
+# Título do Projeto
+
 # Music Player
 
 Um simples reprodutor de música criado com HTML, CSS e JavaScript.
@@ -11,17 +14,19 @@ Um simples reprodutor de música criado com HTML, CSS e JavaScript.
 - Exibição dinâmica do tempo de reprodução e duração da música.
 - Visualização e escolha do gênero musical.
 
-## Pré-requisitos
+c Pré-requisitos
 
 Certifique-se de ter um navegador web moderno que suporte HTML5 e JavaScript.
 
 ## Como usar
+
 - [Acesse o link direto para o Player de Música](https://kevinmarlei.github.io/MusicPlayer/)
 - Ou faça o clone do repositório:
+`bash`
 
-```bash
-git clone https://github.com/seu-usuario github/nome-do-repositorio.git
-Abra o arquivo index.html em um navegador web.
+`git clone https://github.com/seu-usuario github/nome-do-repositorio.git`
+
+`Abra o arquivo index.html em um navegador web.`
 
 ## Estrutura do Projeto
 - css/: Contém os estilos CSS.
