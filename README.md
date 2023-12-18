@@ -23,15 +23,15 @@ Certifique-se de ter um navegador web moderno que suporte HTML5 e JavaScript.
 git clone https://github.com/seu-usuario github/nome-do-repositorio.git
 Abra o arquivo index.html em um navegador web.
 
-Explore as funcionalidades do reprodutor de música.
+<span style="color🐈‍⬛">Explore as funcionalidades do reprodutor de música.
 
-`Estrutura do Projeto
+Estrutura do Projeto
 css/: Contém os estilos CSS.
 icons/: Ícones usados no reprodutor.
 img/: Imagens utilizadas no reprodutor.
 js/: Código JavaScript para a lógica do reprodutor.
 README.md: Este arquivo que você está lendo.
-index.html: Página principal do reprodutor de música.`
+index.html: Página principal do reprodutor de música.</span>
 
 Autor
 [Kevin Marlei F P de Almeida]
