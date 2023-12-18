@@ -23,7 +23,7 @@ Certifique-se de ter um navegador web moderno que suporte HTML5 e JavaScript.
 git clone https://github.com/seu-usuario github/nome-do-repositorio.git
 Abra o arquivo index.html em um navegador web.
 
-Explore as funcionalidades do reprodutor de música.
+Explore as funcionalidades d\o reprodutor de música.
 
 Estrutura do Projeto
 css/: Contém os estilos CSS.
