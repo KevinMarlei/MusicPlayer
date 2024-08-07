@@ -113,6 +113,20 @@ const objectMusic = [
    },
    {
       gender: 'My music',
+      title: 'Anima Rossa',
+      artist: 'PornoGraffitti',
+      src: 'musics/Animarossa.mp3',
+      img: 'img/cerejeiras.gif'
+   },
+   {
+      gender: 'My music',
+      title: 'Ciclo sem Fim',
+      artist: 'O Rei Leão',
+      src: 'musics/O Rei Leão - Ciclo sem Fim.mp3',
+      img: 'img/cerejeiras.gif'
+   },
+   {
+      gender: 'My music',
       title: 'Pra Você',
       artist: 'Onze:20',
       src: 'musics/Onze20 - Pra Você (Áudio).mp3',
