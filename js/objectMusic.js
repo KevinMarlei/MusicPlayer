@@ -149,7 +149,7 @@ const objectMusic = [
    {
       gender: 'My music',
       title: 'Otherside',
-      artist: 'Red Hot Cjili Pepper’s',
+      artist: 'Red Hot Chili Pepper’s',
       src: 'musics/Red Hot Chili Peppers - Otherside (Lyrics).mp3',
       img: 'img/cerejeiras.gif'
    },
