@@ -120,6 +120,13 @@ const objectMusic = [
    },
    {
       gender: 'My music',
+      title: 'Tomorrow',
+      artist: 'Marina Ismail',
+      src: 'musics/Tomorrow by Tsunematsu  Ayumi (Marina Ismail).mp3',
+      img: 'img/cerejeiras.gif'
+   },
+   {
+      gender: 'My music',
       title: 'Ciclo sem Fim',
       artist: 'O Rei Leão',
       src: 'musics/O Rei Leão - Ciclo sem Fim.mp3',
