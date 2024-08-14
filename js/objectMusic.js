@@ -174,4 +174,11 @@ const objectMusic = [
       src: 'musics/Red Hot Chili Peppers - Otherside (Lyrics).mp3',
       img: 'img/cerejeiras.gif'
    },
+   {
+      gender: 'My music',
+      title: 'Cheia de Manias',
+      artist: 'Raça Negra',
+      src: 'musics/Raça Negra - Cheia de Manias.mp3',
+      img: 'img/cerejeiras.gif'
+   },
 ]
