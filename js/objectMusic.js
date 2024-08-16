@@ -195,4 +195,25 @@ const objectMusic = [
       src: 'musics/NewJeans (뉴진스) How Sweet Official MV.mp3',
       img: 'img/cerejeiras.gif'
    },
+   {
+      gender: 'My music',
+      title: 'Under Star',
+      artist: 'Hajime no Ippo',
+      src: 'musics/Hajime No Ippo OP 1 - Under Star - Shocking Lemon (full version).mp3',
+      img: 'img/cerejeiras.gif'
+   },
+   {
+      gender: 'My music',
+      title: 'Opening 2',
+      artist: 'Hajime no Ippo',
+      src: 'musics/Hajime No Ippo OP 2 - Inner Light - Shocking Lemon (full version).mp3',
+      img: 'img/cerejeiras.gif'
+   },
+   {
+      gender: 'My music',
+      title: 'Opening 3',
+      artist: 'Hajime no Ippo',
+      src: 'musics/Opening 3 de Hajime no Ippo full.mp3',
+      img: 'img/cerejeiras.gif'
+   },
 ]
