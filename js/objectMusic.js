@@ -181,4 +181,18 @@ const objectMusic = [
       src: 'musics/Raça Negra - Cheia de Manias.mp3',
       img: 'img/cerejeiras.gif'
    },
+   {
+      gender: 'My music',
+      title: 'Super Shy',
+      artist: 'New jeans',
+      src: 'musics/NewJeans - Super Shy.mp3',
+      img: 'img/cerejeiras.gif'
+   },
+   {
+      gender: 'My music',
+      title: 'How Sweet',
+      artist: 'New jeans',
+      src: 'musics/NewJeans (뉴진스) How Sweet Official MV.mp3',
+      img: 'img/cerejeiras.gif'
+   },
 ]
