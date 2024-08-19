@@ -216,4 +216,32 @@ const objectMusic = [
       src: 'musics/Opening 3 de Hajime no Ippo full.mp3',
       img: 'img/cerejeiras.gif'
    },
+   {
+      gender: 'My music',
+      title: 'Tanjirou no Uta',
+      artist: 'Kimetsu No Yaiba',
+      src: 'musics/「Kamado Tanjiro no Uta」Demon Slayer Kimetsu no Yaiba (鬼滅の刃) [Demon Slayer ep 19 Ending Song].mp3',
+      img: 'img/cerejeiras.gif'
+   },
+   {
+      gender: 'My music',
+      title: 'Shooting Quasar Dragon Theme',
+      artist: 'Yu-Gi-Oh 5D’s',
+      src: 'musics/Shooting Quasar Dragon summoning theme (full).mp3',
+      img: 'img/cerejeiras.gif'
+   },
+   {
+      gender: 'My music',
+      title: 'Past Lives',
+      artist: 'SapientDream',
+      src: 'musics/sapientdream - Past Lives (Lyrics).mp3',
+      img: 'img/cerejeiras.gif'
+   },
+   {
+      gender: 'My music',
+      title: 'Sorisso Resplandecente',
+      artist: 'Dragon ball GT',
+      src: 'musics/DBGT - Sorriso Resplandecente ☁️.mp3',
+      img: 'img/cerejeiras.gif'
+   },
 ]
