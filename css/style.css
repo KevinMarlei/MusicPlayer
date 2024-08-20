@@ -15,7 +15,7 @@
 }
 
 body {
-    width: 100%;
+    width: 100dvw;
     background-image: url(../img/hitesh-dewasi-AJ-YiPjnFiw-unsplash.jpg);
     background-size: cover;
 }
