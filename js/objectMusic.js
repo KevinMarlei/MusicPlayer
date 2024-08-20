@@ -225,13 +225,6 @@ const objectMusic = [
    },
    {
       gender: 'My music',
-      title: 'Shooting Quasar Dragon Theme',
-      artist: 'Yu-Gi-Oh 5D’s',
-      src: 'musics/Shooting Quasar Dragon summoning theme (full).mp3',
-      img: 'img/cerejeiras.gif'
-   },
-   {
-      gender: 'My music',
       title: 'Past Lives',
       artist: 'SapientDream',
       src: 'musics/sapientdream - Past Lives (Lyrics).mp3',
