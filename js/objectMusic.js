@@ -237,4 +237,11 @@ const objectMusic = [
       src: 'musics/DBGT - Sorriso Resplandecente ☁️.mp3',
       img: 'img/cerejeiras.gif'
    },
+   {
+      gender: 'My music',
+      title: 'Estarei Com Você',
+      artist: 'Dragon ball GT',
+      src: 'musics/Dragon Ball GT Encerramento Completo em Português - Estarei com Você (PT-BR).mp3',
+      img: 'img/cerejeiras.gif'
+   },
 ]
