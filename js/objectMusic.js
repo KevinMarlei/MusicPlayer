@@ -197,6 +197,13 @@ const objectMusic = [
    },
    {
       gender: 'My music',
+      title: 'Migate no Gokui Theme',
+      artist: 'Dragon Ball Super',
+      src: 'musics/Migate no Gokui Theme.mp3',
+      img: 'img/cerejeiras.gif'
+   },
+   {
+      gender: 'My music',
       title: 'Under Star',
       artist: 'Hajime no Ippo',
       src: 'musics/Hajime No Ippo OP 1 - Under Star - Shocking Lemon (full version).mp3',
