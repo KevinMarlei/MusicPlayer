@@ -162,6 +162,13 @@ const objectMusic = [
    },
    {
       gender: 'My music',
+      title: 'Heavy Rain',
+      artist: 'Zhiend',
+      src: 'musics/ZHIEND - Heavy Rain (Japanese).mp3',
+      img: 'img/cerejeiras.gif'
+   },
+   {
+      gender: 'My music',
       title: 'Stay With Me',
       artist: 'Matsubara Miki',
       src: 'musics/Miki Matsubara - Stay With Me HD (Club Mix).mp3',
