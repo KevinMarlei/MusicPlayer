@@ -141,20 +141,6 @@ const objectMusic = [
    },
    {
       gender: 'My music',
-      title: 'No Rancho Fundo',
-      artist: 'Xitãozinho e Xororó',
-      src: 'musics/Chitãozinho e Xororó   No Rancho Fundo.mp3',
-      img: 'img/cerejeiras.gif'
-   },
-   {
-      gender: 'My music',
-      title: 'Fio de Cabelo',
-      artist: 'Xitãozinho e Xororó',
-      src: 'musics/Chitãozinho e Xororó - Fio De Cabelo.mp3',
-      img: 'img/cerejeiras.gif'
-   },
-   {
-      gender: 'My music',
       title: 'Creep',
       artist: 'RadioHead',
       src: 'musics/Creep.mp3',
