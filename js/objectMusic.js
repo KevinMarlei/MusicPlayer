@@ -232,7 +232,7 @@ const objectMusic = [
    },
    {
       gender: 'My music',
-      title: 'Sorisso Resplandecente',
+      title: 'Sorriso Resplandecente',
       artist: 'Dragon ball GT',
       src: 'musics/DBGT - Sorriso Resplandecente ☁️.mp3',
       img: 'img/cerejeiras.gif'
