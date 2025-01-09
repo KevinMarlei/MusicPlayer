@@ -244,4 +244,11 @@ const objectMusic = [
       src: 'musics/Dragon Ball GT Encerramento Completo em Português - Estarei com Você (PT-BR).mp3',
       img: 'img/cerejeiras.gif'
    },
+   {
+      gender: 'My music',
+      title: 'Its Going Down now',
+      artist: 'Persona 3 Reload',
+      src: 'musics/Its Going Down Now.mp3',
+      img: 'img/cerejeiras.gif'
+   },
 ]
